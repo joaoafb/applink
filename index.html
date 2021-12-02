@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <link rel="icon" type="image/x-icon" href="assents/img/logoapp.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo&family=Outfit:wght@600&family=PT+Sans+Narrow&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Links</title>
+    <link rel="stylesheet" href="assents/css/style.css">
+</head>
+<body>
+  
+<!--DIV SEJA BEM VINDO-->
+<div  class="box" id="divbemvindo"><br>
+    <img src="assents/img/logoapp.png" alt="">
+    <h1>Olá, Seja Bem Vindo(a)<br> <span style="font-size: 15pt;color: rgb(218, 218, 218);">a Nova Versão do App Link!</span> </h1><br><br>
+    <button onclick="next()" id="btncenter" >Continuar</button>
+</div>
+<!--DIV FORMULARIO-->
+
+
+<div id="box1" class="box">
+    <h1>Qual Seu Curso Técnico?</h1>
+<br>
+    <div>
+    
+      <button  id="btnadm" class="btnentrar">Administração</button><hr>
+      <button  id="btnseg" class="btnentrar">Seg. no Trabalho</button>
+    </div>
+</div>
+<div id="box2" class="box">
+    <h1>Qual Ano Cursa?</h1>
+  <br>
+    <div>
+    
+      <button onclick="primeiroano()" id="primeiroano"class="btnentrar">1º Ano</button><hr>
+      <button class="btnentrar" onclick="segundoano()">2º Ano</button><hr>
+      <button class="btnentrar" onclick="terceiroano()">3º Ano</button><hr>
+    </div>
+  </div>
+  
+  
+  <!--BOX 3-->
+  
+  <div id="box3" class="box">
+    <h1>Qual o Seu Nome</h1>
+    <span id="alert" style="color: red;font-size: 12pt;margin-left: 14px;float: left;">Digite Alguma Coisa!</span>
+  <br>
+    <div>
+    
+      <input required autocomplete="off" type="text"style="width:90%;margin:0 auto;margin-bottom:20px;" class="form-control" id="inputnome" placeholder="Digite Aqui" aria-describedby="emailHelp">
+      <input id="submit" type="submit" class="btngeral" value="Terminar"><hr>
+    </div>
+  </div>
+
+
+
+   <!--BOX 4-->
+  
+   <div id="box4" class="box">
+   
+  </div>
+    <!--MENU-->
+    <div id="divmenu" class="boxmenu">
+        
+        <button onclick="home()" id="btn1" class="btnmenu"><i id="btnhome" class="fas fa-home"></i></button>
+  
+        <button onclick="reoferta()" class="btnmenu"><i id="btnreoferta" class="fas fa-chalkboard-teacher"></i></button>
+
+        <button onclick="login()" class="btnmenu"> <i id="btadm" class="fas fa-user-shield"></i></button>
+        
+        <button onclick="config()"  class="btnmenu"> <i id="btnmenu" class="fas fa-cog"></i></button>
+      </div>
+
+
+      <!--DIV HOME-->
+<div id="divhome" class="box">
+    <img src="assents/img/logoapp.png" alt="">
+      <h1>Selecione o Dia</h1>
+      <br>
+              <div>
+              
+                <button id="btnsegunda" class="btndias">Segunda-Feira</button>
+                <button id="btnterca" class="btndias">Terça-Feira</button>
+                <button id="btnterca" class="btndias">Quarta-Feira</button>
+                <button id="btnterca" class="btndias">Quinta-Feira</button>
+                <button id="btnterca" class="btndias">Sexta-Feira</button>
+               
+                <button id="btnterca" style="margin-bottom: 0;" class="btndias">REOFERTAS</button>
+              </div>
+          </div>
+
+          <!--DIV CONFIG-->
+
+          <div id="divconfig" class="box">
+            <h1>Configurações</h1>
+    <br>
+            
+       
+       
+    
+          <img width="100px" src="assents/img/user.png" alt=""><br><br>
+          <div class="box2">
+            <label for="">Nome:</label><span id="exibirnome">ERRO NO NOME</span>
+            
+               <label for="">Turma</label><span id="exibirano">ERRO NOS DADOS</span>
+          </div><hr>
+         </div>
+      
+    
+   
+
+        
+      <!--DIV REOFERTA-->
+<div id="divreoferta" class="box">
+  <img src="assents/img/logoapp.png" alt="">
+    <h1>Selecione o Dia</h1>
+    <br>
+            <div>
+            
+              <button id="btnsegunda" class="btndias">Segunda-Feira</button>
+              <button id="btnterca" class="btndias">Terça-Feira</button>
+              <button id="btnterca" class="btndias">Quarta-Feira</button>
+              <button id="btnterca" class="btndias">Quinta-Feira</button>
+              <button id="btnterca" class="btndias">Sexta-Feira</button>
+             
+            
+            </div>
+        </div>
+
+
+
+
+
+         <!--DIV HLOGIN-->
+<div id="divlogin" class="box">
+  <img src="assents/img/logoapp.png" alt="">
+    <h1>Faça o Login</h1>
+    <br>  
+    <form action="/">
+    
+      <label for="" class="inputlabel2">Seu Usuario</label><br>
+      <input class="input2" class="input" type="text" placeholder="Digite Seu Usuario" autocomplete="off">
+      <br>
+      <label class="inputlabel2" for="">Sua Senha</label><br>
+      <input class="input2" type="password" placeholder="Digite Sua Senha" autocomplete="off">
+<br><br>
+
+      <button type="submit" class="btn btn-sucess">Entrar</button>
+  
+
+  
+
+     
+  </form>
+        </div>
+
+
+
+
+</body>
+<script src="https://kit.fontawesome.com/d3c038606f.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="assents/js/menu.js"></script>
+<script src="assents/js/form.js"></script>
+<script src="assents/js/locastorage.js"></script>
+</body>
+</html>
+</html>
