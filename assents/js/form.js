@@ -44,6 +44,9 @@ document.querySelector("#submit").onclick = function(){
 
 
    else{
+   
+
+
     localStorage.setItem("nome", document.querySelector("#inputnome").value)
     localStorage.setItem("aparecercadastro", "nao")
     document.getElementById("box4").style.display = "none"
@@ -53,6 +56,25 @@ document.querySelector("#submit").onclick = function(){
     document.getElementById("divbemvindo").style.display = "none"
     document.getElementById("divhome").style.display = "block"
     document.getElementById("box3").style.display = "none"
+
+    cadUser();
    }
+
+}
+
+function cadUser(){
+    db.collection("usuarios").add({
+            
+        'ano': localStorage.getItem("ano"),
+        'nome': localStorage.getItem("nome"),
+        'turma': localStorage.getItem("curso"),
+      })
+      .then((docRef) => {
+          console.log("Dado Inserido Com Sucesso! ID:", docRef.id);
+          
+      })
+      .catch((error) => {
+          console.error("Erro ao Ensinar os Dados! Erro: ", error);
+      });
 
 }

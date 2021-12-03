@@ -173,7 +173,7 @@ top: 50%;
     background:transparent;
     padding:10px;
     display:flex;
-    border: 1px solid #2ff197;
+    border: 1px solid #27272962;
     border-radius: 10px;
     margin: 0 auto;
     width:90%;
@@ -225,6 +225,12 @@ top: 50%;
     transition: 0.5s;
     color:white;
 }
+
+
+
+
+
+
 
 
 @keyframes suave {

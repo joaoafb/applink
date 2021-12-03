@@ -45,3 +45,6 @@ function login(){
     document.getElementById("divconfig").style.display = "none"
     document.getElementById("divbemvindo").style.display = "none"
 }
+
+
+
