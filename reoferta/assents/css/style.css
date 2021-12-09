@@ -1,0 +1,259 @@
+body{ 
+    user-select: none;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+    font-family: 'Outfit', sans-serif;
+    padding: 10px;
+    background: rgb(0,143,131);
+    background: linear-gradient(90deg, rgba(0,143,131,1) 0%, rgba(47,241,151,1) 100%);
+    box-sizing: border-box;
+}
+
+
+#btncenter{
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.box{
+    position: relative;
+top: 50%;
+
+    transition: ease-in-out 1s;
+    animation:suave 1s;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    padding: 30px 10px 30px 10px;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+    width:90%;
+    border-radius:20px;
+    height: auto;
+    background:#27272962;
+}
+
+
+.aula{
+    position: relative;
+    top: 50%;
+
+    transition: ease-in-out 1s;
+    animation:suave 1s;
+    font-family: 'Outfit', sans-serif;
+    
+    padding: 10px 1px 15px 1px;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+    width:90%;
+    border-radius:20px;
+    height: auto;
+    background:#27272962;
+}
+.box h1{
+    
+    font-size:20pt;
+    color: white;
+    text-align: center;
+}
+
+.box img{
+    width:100px;
+    margin: 0 auto;
+}
+.box button{
+  
+    margin-bottom:10px ;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: 'Outfit', sans-serif;
+    font-size:15pt;
+    background:#2ff197;
+    color:green ;
+    text-align: center;
+    border: 0ch;
+    border-radius: 10px;
+    transition: 0.5s;
+    width:90%;
+    height:40px;
+    
+   
+}
+
+.box button:hover{
+    box-shadow: #2ff197 0px 7px 29px 0px;
+    transition: 0.5s;
+    color:white;
+}
+
+
+.boxmenu{
+   
+   
+    justify-content: center;
+    left: 0;
+    right: 0;
+    position:absolute;
+    bottom:0;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    padding: 5px;
+    flex-direction: flex;
+    display: flex;
+    margin: 0 auto;
+    width:100%;
+    border-radius:5px;
+    height: auto;
+    background:#27272962;
+}
+
+
+.btnmenu{
+    
+    
+    box-sizing: border-box;
+    margin: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: 'Outfit', sans-serif;
+    font-size:15pt;
+    background:#2ff197;
+    color:green ;
+    text-align: center;
+    border: 0ch;
+    border-radius: 50px;
+    transition: 0.5s;
+    height:50px;
+    width:50px;
+  
+}
+.btnmenu:hover{
+
+    transition: 0.5s;
+    color:white;
+     box-shadow: #2ff197 0px 7px 29px 0px;
+}
+
+
+.box2{
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+    padding: 15px 5px 15px 25px;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+    width:90%;
+    border-radius:20px;
+    height: auto;
+    background:#27272962;
+}
+
+.box2 label{
+    color: rgb(173, 173, 173);
+}
+.box2 span{
+    color: white;
+}
+
+
+
+.inputlabel{
+    float: left;
+    margin-left: 20px;
+    color: black;
+}
+
+.inputlabel2{
+    float: left;
+    margin-left: 20px;
+    color: white;
+}
+.input{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: black;
+    background:transparent;
+    padding:10px;
+    display:flex;
+    border: 1px solid #2ff197;
+    border-radius: 10px;
+    margin: 0 auto;
+    width:90%;
+    height:40px;
+}
+.input::placeholder{
+    color: green;
+}
+
+.input2{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: white;
+    background:transparent;
+    padding:10px;
+    display:flex;
+    border: 1px solid #27272962;
+    border-radius: 10px;
+    margin: 0 auto;
+    width:90%;
+    height:40px;
+}
+
+.input2::placeholder{
+    color:rgb(194, 194, 194);
+}
+.btngeral{
+   
+  
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: 'Outfit', sans-serif;
+    font-size:15pt;
+    background:#2ff197;
+    color:white ;
+    text-align: center;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+    width:auto;
+    height:40px;
+}
+.box button:hover{
+    box-shadow: #2ff197 0px 7px 29px 0px;
+    transition: 0.5s;
+    color:white;
+}
+
+
+#btnfechar{
+    
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: 'Outfit', sans-serif;
+    font-size:15pt;
+    background:gray;
+    color:white ;
+    text-align: center;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+    width:auto;
+    height:40px;
+}
+
+#btnfechar:hover{
+    box-shadow: gray 0px 7px 29px 0px;
+    transition: 0.5s;
+    color:white;
+}
+
+
+
+
+
+
+
+
+@keyframes suave {
+    
+    0%   { opacity: 0;} 
+
+    100% { opacity: 100;}
+  }
